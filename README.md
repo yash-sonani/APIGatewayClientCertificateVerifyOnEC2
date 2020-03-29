@@ -45,7 +45,7 @@ sudo ./certbot-auto -d api.test.com --manual --preferred-challenges dns certonly
 
 7.] Create Node Service to verify the certificate:
 
-```
+```js
 var https = require('https');
 var fs = require('fs');
 
