@@ -4,6 +4,8 @@ This Repository show how you can verify API Gateway Certificate on EC2 Instance.
 
 1.] Create Client certification in API Gateway:
 
+![APIGW](https://github.com/yash-sonani/APIGatewayClientCertificateVerifyOnEC2/blob/master/APIGW-Client%20Certificate.png)
+
 2.] Copy certificate and make clientca.pem file.
 
 3.] launching new Instance and Connect instance with SSH.
@@ -16,6 +18,10 @@ sudo yum -y install nodejs
 
 ```
 
+![Install-Node-1](https://github.com/yash-sonani/APIGatewayClientCertificateVerifyOnEC2/blob/master/Node-Instalation-1.png)
+
+![Install-Node-2](https://github.com/yash-sonani/APIGatewayClientCertificateVerifyOnEC2/blob/master/Node-Instalation-2.png)
+
 5.] Installation of certBot (For create cretificate):
 
 ```
@@ -24,6 +30,12 @@ chmod a+x ./certbot-auto
 ./certbot-auto certonly --standalone -d api.test.com   [api.test.com is domain name]
 sudo ./certbot-auto -d api.test.com --manual --preferred-challenges dns certonly   
 ```
+
+![Install-certBot-1](https://github.com/yash-sonani/APIGatewayClientCertificateVerifyOnEC2/blob/master/certBot-Installation-1.png)
+
+![Install-certBot-2](https://github.com/yash-sonani/APIGatewayClientCertificateVerifyOnEC2/blob/master/certBot-Installation-2.png)
+
+![Install-certBot-3](https://github.com/yash-sonani/APIGatewayClientCertificateVerifyOnEC2/blob/master/certBot-Installation-3.png)
 
 6.] Certificate(fullchain.pem) and key(privkey.pem) generated on path
 
